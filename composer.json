@@ -1,0 +1,48 @@
+{
+  "name": "jr-enterprising/php-eth",
+  "description": "Integrator for ETH JSON-RPC API",
+  "keywords": [
+    "jr-enterprising",
+    "laravel",
+    "php-eth",
+    "json-rpc",
+    "eth",
+    "bsc"
+  ],
+  "homepage": "https://github.com/JR-Enterprising/PHP-ETH",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrei Dumitrescu",
+      "email": "andrei@jrenterprising.ro",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-curl": "*",
+    "kornrunner/keccak": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "JrEnterprising\\PhpEnv\\": "src/"
+    },
+    "exclude-from-classmap": ["docker-compose.yml", "makefile", "/docker/"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JrEnterprising\\PhpEnv\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "analyse": "vendor/bin/phpstan analyse",
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/pest --coverage",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

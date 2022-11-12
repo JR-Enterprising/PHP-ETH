@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'jr-enterprising/php-eth',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '4f8ff04fef7a6d80177c552d1396fdc856f6694d',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'jr-enterprising/php-eth' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '4f8ff04fef7a6d80177c552d1396fdc856f6694d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'kornrunner/keccak' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'reference' => '433749d28e117fb97baf9f2631b92b5d9ab3c890',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kornrunner/keccak',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-mbstring' => array(
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'reference' => '8ad114f6b39e2c98a8b0e3bd907732c207c2b534',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
